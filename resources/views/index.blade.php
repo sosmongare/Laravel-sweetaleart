@@ -9,9 +9,10 @@
 <body>
       
 <div class="container">
-    <h1>Laravel Sweet Alert Confirm Delete Example - ItSolutionStuff.com</h1>
+    <hr>
+    <h1 class="text-center">Laravel Sweet Alert Confirm Delete implementation</h1>
   
-    <table class="table table-bordered data-table">
+    <table class="table table-bordered data-table table-stripped table-sm">
         <thead>
             <tr>
                 <th>No</th>
@@ -30,7 +31,7 @@
                         <form method="POST" action="{{ route('users.delete', $user->id) }}">
                             @csrf
                             <input name="_method" type="hidden" value="DELETE">
-                            <button type="submit" class="btn btn-xs btn-danger btn-flat show_confirm" data-toggle="tooltip" title='Delete'>Delete</button>
+                            <button type="submit" class="btn btn-xs btn-sm btn-danger btn-flat show_confirm" data-toggle="tooltip" title='Delete'>Delete</button>
                         </form>
                     </td>
                 </tr>
